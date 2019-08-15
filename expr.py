@@ -47,6 +47,17 @@ class Expression(object):
         if expr_list[1] not in ['add', 'multiply']:
             return False
 
+        count = 0
+        for char in expr_list:
+            if char == '(':
+                count += 1
+            if char == ')':
+                count -=1
+                if count <0 :
+                    return False
+        if count != 0 :
+            return False 
+
         for subexpr in self.get_subexprs(expr_list):
             if not self.is_valid(subexpr):
                 return False
