@@ -24,7 +24,7 @@ ParseInput is an Object to read and parse the input string.
 Input string is from command line argument, like:
 "(multiply (add 1 2) 3)"
 
-**Use pasre_to_list()** method to parse the string into a list, like:
+Use **pasre_to_list()** method to parse the string into a list, like:
 ['(', 'multiply', '(', 'add', '1', '2', ')', '3', ')']
 
 
