@@ -39,27 +39,3 @@ class Calculator(object):
         for subexpr in expression.get_subexprs(expression.get_exprlist()):
             base *= self.calc_expression(Expression(subexpr))
         return base
-
-
-
-    # def get_subexprs(self, expression):
-    #     res = []
-    #     i = 1
-    #     while i < len(expression):
-    #         l = self.count_subexpr_length(expression, i)
-    #         res.append(expression[i:i+l])
-    #         i += l
-    #     return res
-    #
-    #
-    # def count_subexpr_length(self, expression, i):
-    #     j = i+1
-    #     if expression[i] == '(':
-    #         count = 1
-    #         while count!= 0 :
-    #             if expression[j] == ')':
-    #                 count -= 1
-    #             if expression[j] == '(':
-    #                 count += 1
-    #             j += 1
-    #     return j-i
