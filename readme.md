@@ -3,7 +3,7 @@ S-expression calculator
 Python 3.7.3
 
 
-###calc.py
+### calc.py
 Main file to run this calculator engine.
 Runs the engine in command line, with one valid argument as input.
 
@@ -18,7 +18,7 @@ Content:
 
 
 
-###parse.py
+### parse.py
 ParseInput is an Object to read and parse the input string.
 
 Input string is from command line argument, like:
@@ -30,7 +30,7 @@ Input string is from command line argument, like:
 
 
 
-###calculator.py
+### calculator.py
 Calculator is an Object that can parse the Expression instance and give the calculated result.
 
 Use **calculate()** method to calculate, input of this method is an Expression instance, output is a number(integer).
@@ -38,7 +38,7 @@ Use **calculate()** method to calculate, input of this method is an Expression i
 
 
 
-###expr.py
+### expr.py
 Expression is an Object that stores the expression list and does basic manipulation on it.
 
 **check_validation()** method checks whether an expression is a valid S_expression.
